@@ -1,11 +1,11 @@
 Given(/^que inicie la aplicacion$/) do
-  visit '/'
+    visit '/'
 end
 
-When(/^le di click al boton "([^"]*)"$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
+Then(/^debo ver "([^"]*)"$/) do |text|
+  expect(page.body).to match /#{text}/m
 end
 
-Then(/^debo ver "([^"]*)"$/) do |arg1|
-  pending # Write code here that turns the phrase above into concrete actions
+Given(/^le di click al boton "([^"]*)"$/) do |name|
+  click_button(name)
 end
