@@ -18,5 +18,6 @@ post '/repartir' do
 	session['camp2'] = 10
 	session['camp3'] = 6
 	session['camp4'] = 7
+	session['mensaje'] = "Gana la Casa"
 	erb :juego
 end
