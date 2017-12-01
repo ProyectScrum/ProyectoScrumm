@@ -7,8 +7,6 @@ Scenario: Ver la mesa de juego
 	When le di click al boton "Repartir"
  	Then debo ver "Carta 1"  
  	And debo ver "Carta 2"
- 	And debo ver "Carta 3"
- 	And debo ver "Carta 4" 
  	
 
 
@@ -20,7 +18,7 @@ Scenario: Repartir cartas para nuevo juego
   	And debo ver en camp2 "5"
   	And debo ver en camp3 "11"
   	And debo ver en camp4 "10"
-  	And debo ver en "mensaje" el mensaje "Gana la Casa"
+  	#And debo ver en "mensaje" el mensaje "Gana la Casa"
  
  #Scenario: Ver Resultados
  	#Given que inicie la aplicacion

@@ -14,10 +14,16 @@ post '/mesa' do
 end
 
 post '/repartir' do
-	session['camp1'] = 5
-	session['camp2'] = 10
-	session['camp3'] = 6
-	session['camp4'] = 7
-	session['mensaje'] = "Gana la Casa"
+	session['camp1'] = rand(1..10)
+	session['camp2'] = rand(1..10)
+	session['camp3'] = rand(1..10)
+	session['camp4'] = rand(1..10)
+	j1 = (session['camp1'].to_i + session['camp2'].to_i)
+	casa = (session['camp3'].to_i + session['camp4'].to_i)
+	if j1 > casa 
+		session['mensaje'] = "Gana Jugador1"
+	else		
+		session['mensaje'] = "Gana la Casa"
+	end
 	erb :juego
 end
