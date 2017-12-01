@@ -18,8 +18,18 @@ Scenario: Repartir cartas para nuevo juego
   	And debo ver en "camp2" el mensaje "5"
   	And debo ver en "camp3" el mensaje "11"
   	And debo ver en "camp4" el mensaje "10"
-  	And debo ver en "mensaje" el mensaje "Gana la Casa"
  
+Scenario: Pasar turno define quien gana
+	Given que inicie la aplicacion
+	And le di click al boton "Ingresar"
+	When le di click al boton "Repartir" 
+	And le di click al boton "Pasar"
+	Then debo ver en "camp1" el mensaje "10"
+  	And debo ver en "camp2" el mensaje "5"
+  	And debo ver en "camp3" el mensaje "11"
+  	And debo ver en "camp4" el mensaje "10"
+  	And debo ver en "mensaje" el mensaje "Gana la Casa"
+
  #Scenario: Ver Resultados
  	#Given que inicie la aplicacion
 	#And le di click al boton "Ingresar"
