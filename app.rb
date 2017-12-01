@@ -23,6 +23,8 @@ post '/repartir' do
 	session['camp3'] = rand(1..10)
 	session['camp4'] = rand(1..10)
 	session['camp4Hidden'] = "##"
+	session['CasaT']= (session['camp1'].to_i + session['camp2'].to_i)
+	session['J1T'] = (session['camp3'].to_i + session['camp4'].to_i)
 	erb :juego
 end
 
