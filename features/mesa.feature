@@ -14,11 +14,11 @@ Scenario: Repartir cartas para nuevo juego
 	Given que inicie la aplicacion
 	And le di click al boton "Ingresar"
 	When le di click al boton "Repartir"
-  	Then debo ver en camp1 "10"
-  	And debo ver en camp2 "5"
-  	And debo ver en camp3 "11"
-  	And debo ver en camp4 "10"
-  	#And debo ver en "mensaje" el mensaje "Gana la Casa"
+  	Then debo ver en "camp1" el mensaje "10"
+  	And debo ver en "camp2" el mensaje "5"
+  	And debo ver en "camp3" el mensaje "11"
+  	And debo ver en "camp4" el mensaje "10"
+  	And debo ver en "mensaje" el mensaje "Gana la Casa"
  
  #Scenario: Ver Resultados
  	#Given que inicie la aplicacion
