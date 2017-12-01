@@ -5,10 +5,10 @@ Scenario: Ver la mesa de juego
 	Given que inicie la aplicacion
 	And le di click al boton "Ingresar"
 	When le di click al boton "Repartir"
- 	Then debo ver "camp1"  
- 	And debo ver "camp2"
- 	And debo ver "camp3"
- 	And debo ver "camp4" 
+ 	Then debo ver "Carta 1"  
+ 	And debo ver "Carta 2"
+ 	And debo ver "Carta 3"
+ 	And debo ver "Carta 4" 
  	
 
 

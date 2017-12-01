@@ -8,10 +8,10 @@
 	<h2>Jugador 1</h2> 
 	<h2>Jugador 2</h2>
 	<form action="/repartir" method="post">
-		<h3>Carta 1</h3> <input type="text" name="camp1">
-		<h3>Carta 2</h3> <input type="text" name="camp2">
-		<h3>Carta 1</h3> <input type="text" name="camp3">
-		<h3>Carta 2</h3> <input type="text" name="camp4">
+		<div><h3>Carta 1</h3> <h4><%= session['camp1']%></h4></div>
+		<div><h3>Carta 2</h3> <h4><%= session['camp2']%></h4></div>
+		<div><h3>Carta 3</h3> <h4><%= session['camp3']%></h4></div>
+		<div><h3>Carta 4</h3> <h4><%= session['camp4']%></h4></div>
 		<input type="submit" value="Repartir">
 	</form>
 </body>
