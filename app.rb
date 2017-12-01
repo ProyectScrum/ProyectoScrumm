@@ -28,11 +28,17 @@ post '/repartir' do
 	erb :juego
 end
 
+post '/carta' do
+	session['camp5'] = rand(1..10)
+	erb :juego
+end
+
 get '/test' do
 	session['camp1'] = 10
 	session['camp2'] = 5
 	session['camp3'] = 11
 	session['camp4'] = 10
+	session['camp5'] = 5
 	session['mensaje'] = "Gana la Casa"
 	erb :juego
 end

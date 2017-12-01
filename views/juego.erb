@@ -12,6 +12,7 @@
 				<h3> Jugador 1</h3>
 				<div><h3>Carta 1</h3> <h4 id="camp1"><%= session['camp1']%></h4></div>
 				<div><h3>Carta 2</h3> <h4 id="camp2"><%= session['camp2']%></h4></div>
+				<div><h3>Carta 3</h3> <h4 id="camp5"><%= session['camp5']%></h4></div>
 			</th>
 			<td width="50">
 				
@@ -23,6 +24,7 @@
 				<h3> Casa</h3>
 				<div><h3>Carta 1</h3> <h4 id="camp3"><%= session['camp3']%></h4></div>
 				<div><h3>Carta 2</h3> <h4 id="camp4"><%= session['camp4']%></h4></div>
+				<div><h3>Carta 3</h3> <h4 id="camp6"><%= session['camp6']%></h4></div>
 			</th>
 		</tr>
 		<tr>
@@ -30,8 +32,17 @@
 				<h1><span id="mensaje"><%= session['mensaje']%></span></h1>
 				<input type="submit" value="Repartir">
 			</td>
-		</tr>	
+		</tr>
 	</table>
+	</form>
+	<form action="/carta" method="post">
+		<table>
+			<tr>
+				<td align="center">
+					<input type="submit" value="Pedir Carta">
+				</td>
+			</tr>
+		</table>		
 	</form>
 </body>
 </html>
