@@ -4,18 +4,33 @@
 	<title>Juego</title>
 </head>
 <body>
-	<h1>Inicio de Partida</h1>
-	<h2>Jugador 1</h2> 
-	<h2>Jugador 2</h2>
 	<form action="/repartir" method="post">
-		<div><h3>Carta 1</h3> <h4><%= session['camp1']%></h4></div>
-		<div><h3>Carta 2</h3> <h4><%= session['camp2']%></h4></div>
-		<div><h3>Carta 3</h3> <h4><%= session['camp3']%></h4></div>
-		<div><h3>Carta 4</h3> <h4><%= session['camp4']%></h4></div>
-		<input type="submit" value="Repartir">
-
-<h1><span id="mensaje"><%= session['mensaje']%></span></h1>
-
+	<table>
+		<tr>
+			<th>
+				<h3> Jugador 1</h3>
+				<div><h3>Carta 1</h3> <h4><%= session['camp1']%></h4></div>
+				<div><h3>Carta 2</h3> <h4><%= session['camp2']%></h4></div>
+			</th>
+			<td width="50">
+				
+			</td>
+			<td width="50">
+				
+			</td>
+			<th>
+				<h3> Casa</h3>
+				<div><h3>Carta 1</h3> <h4><%= session['camp3']%></h4></div>
+				<div><h3>Carta 2</h3> <h4><%= session['camp4']%></h4></div>
+			</th>
+		</tr>
+		<tr>
+			<td colspan="4" align="center">
+				<h1><span id="mensaje"><%= session['mensaje']%></span></h1>
+				<input type="submit" value="Repartir">
+			</td>
+		</tr>	
+	</table>
 	</form>
 </body>
 </html>
