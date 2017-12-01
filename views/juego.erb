@@ -22,7 +22,8 @@
 			<th>
 				<h3> Casa</h3>
 				<div><h3>Carta 1</h3> <h4 id="camp3"><%= session['camp3']%></h4></div>
-				<div><h3>Carta 2</h3> <h4 id="camp4"><%= session['camp4']%></h4></div>
+				<div>
+				<h3>Carta 2</h3> <h4 id="camp4" ><%= session['camp4'] %></h4>
 			</th>
 		</tr>
 		<tr>
@@ -32,6 +33,9 @@
 			</td>
 		</tr>	
 	</table>
+	</form>
+	<form action="/pasar" method="post">
+		<input type="submit" value="Pasar">
 	</form>
 </body>
 </html>
